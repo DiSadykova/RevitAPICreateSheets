@@ -54,7 +54,7 @@ namespace RevitAPICreateSheets
                 for (int i = 0; i < Amount; i++)
                 {
                     ViewSheet viewSheet = ViewSheet.Create(_doc, SelectedTitleBlockType.Id);
-                    if ((viewportList.Count == 0 || a == 0) & (i == 0))
+                    if ((viewportList.Count == 0 || a == 0) && (i == 0))
                     {
 
                         Viewport viewport = Viewport.Create(_doc, viewSheet.Id, SelectedView.Id, new XYZ(1, 1, 0));
